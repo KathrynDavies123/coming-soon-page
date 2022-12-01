@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="imgcontainer"></div>
+        <div class="logocontainer"><img
+        src="./assets/images/logo.svg"
+        alt="base apparel logo"
+        class="logo"
+      /></div>
+        <article>
+          <h1><span>We're</span> coming soon</h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form class="newsletterform">
+            <div class="formcontainer">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="emailinputfield"
+              />
+              <img
+                src="./assets/images/icon-error.svg"
+                alt="error icon"
+                class="emailerroricon"
+              />
+            </div>
+            <button type="submit" class="submitbutton">
+              <img
+                src="./assets/images/icon-arrow.svg"
+                alt="submit button arrow icon"
+              />
+            </button>
+          </form>
+          <p class="emailerror">Please provide a valid email</p>
+        </article>
+      </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
